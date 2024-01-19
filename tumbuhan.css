@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Warna latar belakang biru muda */
+    color: #000; /* Warna teks hitam */
+}
+
+header {
+    background-color: #008000; /* Warna hijau untuk header */
+    color: #fff; /* Warna teks putih */
+    text-align: left;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 150px; /* Sesuaikan ukuran logo sesuai kebutuhan */
+    height: 150px;
+}
+
+.header-content {
+    margin-left: 20px; /* Jarak antara logo dan judul */
+}
+
+section {
+    padding: 20px;
+}
+
+#tentang, #isi-taman {
+    background-color: #fff; /* Warna latar belakang putih */
+}
+
+#isi-taman {
+    background-color: #e0ffe0; /* Warna latar belakang hijau muda */
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify; 
+}
+
+.tumbuhan {
+    display: flex;
+    justify-content: flex-start; /* Gambar di sebelah kiri */
+    align-items: center; /* Konten berada di tengah */
+    margin-bottom: 20px;
+}
+
+.tumbuhan img {
+    width: 150px; /* Sesuaikan ukuran gambar tumbuhan sesuai kebutuhan */
+    height: 150px;
+    margin-right: 20px;
+}
+
+.tumbuhan-content {
+    flex: 1;
+    text-align: justify; /* Membuat tulisan rata kiri-kanan */
+}
+
+footer {
+    background-color: #008000; /* Warna hijau untuk footer */
+    color: #fff; /* Warna teks putih */
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+nav {
+    background-color: #008000; /* Warna hijau untuk navigasi */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around; /* Membuat item navigasi terdistribusi secara merata */
+}
+
+nav li {
+    margin: 0;
+    padding: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff; /* Warna teks putih */
+    font-weight: bold;
+    transition: color 0.3s; /* Efek transisi warna */
+}
+
+nav a:hover {
+    color: #00ff00; /* Warna teks saat dihover (misalnya, hijau muda) */
+}
+
+/* Gaya responsif */
+@media only screen and (max-width: 600px) {
+    header {
+        text-align: center;
+    }
+
+    .logo {
+        order: -1; /* Memindahkan logo di atas judul pada tampilan seluler */
+    }
+
+    .header-content {
+        margin-left: 0; /* Menghilangkan margin pada judul pada tampilan seluler */
+    }
+
+    nav ul {
+        flex-direction: column; /* Mengubah arah item navigasi menjadi vertikal pada tampilan seluler */
+        align-items: center;
+    }
+
+    nav li {
+        padding: 10px;
+    }
+}
